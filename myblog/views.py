@@ -35,6 +35,7 @@ def detail(request, pk):
     md = markdown.Markdown(extensions=[
         'markdown.extensions.extra',
         'markdown.extensions.codehilite',
+        'markdown.extensions.fenced_code',
         # 记得在顶部引入 TocExtension 和 slugify
         TocExtension(slugify=slugify),
     ])
