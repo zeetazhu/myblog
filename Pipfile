@@ -11,6 +11,7 @@ django-haystack = "*"
 django-pure-pagination = "*"
 django = "~=2.2"
 elasticsearch = ">=2,<3"
+gunicorn = {index = "https://pypi.douban.com/simple",version = "*"}
 
 [requires]
 python_version = "3.7"
