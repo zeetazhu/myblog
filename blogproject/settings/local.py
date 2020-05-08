@@ -1,5 +1,4 @@
-rom.common
-import *
+from .common import *
 
 SECRET_KEY = 'development-secret-key'
 DEBUG = True
