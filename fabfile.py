@@ -44,7 +44,6 @@ def deploy(c):
 
     # 重新启动应用
     with c.cd(supervisor_conf_path):
-        c.run('supervisord -c supervisord.conf')
-        c.run('source environment.ini')
+        # c.run('supervisord -c supervisord.conf')
         cmd = 'supervisorctl start {}'.format(supervisor_program_name)
         c.run(cmd)
